@@ -64,7 +64,7 @@ plugins:
 title: "gokhan.dev"
 bye_message: "Thx!"
 baseurl: "/"
-url: "https://godilman.github.io"
+url: "https://gokhan.dev"
 disqus: godilman
 
 # Header settings
