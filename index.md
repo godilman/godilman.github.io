@@ -24,7 +24,7 @@ In this era of rapid technological advancements, I remain committed to continuou
 
 **Sr. Web Software Developer**
 
-~ Erkunt Tractor Ind. Inc.
+~ Erkunt Tractor Ind. Inc. <a href="images/main/IMG_20220316_123059.jpg" target="_blank">📃</a> <a href="images/main/kaizen.jpg" target="_blank">📃</a>
 ~ 06/2012 - Present
 
 - To complete the software and application developments determined by the organization in line with the vision and strategies and to ensure that they are put into use.
@@ -53,13 +53,13 @@ and
 <br>
 
 2009-2011  
-~ Associate’s degree  in  Computer Programming,  Sakarya University
+~ Associate’s degree  in  Computer Programming,  Sakarya University <a href="images/main/IMG_20220316_123547.jpg" target="_blank">📃</a> <a href="images/main/IMG_20220316_123634.jpg" target="_blank">📃</a>
 
 
 #  Certificates
 
 2009-2011  
-~ Digital Game Development Certificate Program (only modeling and design)
+~ Digital Game Development Certificate Program (only modeling and design) <a href="images/main/IMG_20220316_123750.jpg" target="_blank">📃</a>
 <br>
 ~ TED University
 <br>
@@ -67,7 +67,7 @@ and
 <br>
 
 2013-2014  
-~ Microsoft Certified Solution Developer
+~ Microsoft Certified Solution Developer <a href="images/main/IMG_20220316_123834.jpg" target="_blank">📃</a>
 <br>
 ~ Bilge Adam Technology
 <br>
