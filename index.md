@@ -2,59 +2,79 @@
 layout: content
 ---
 
-# Clyell
+#
+Hello 👋 this is **Gökhan Dilman**
 
-[https://gjuniioor.github.io/clyell](https://gjuniioor.github.io/clyell)
+• Strong knowledge in PHP, especially with the Codeigniter and Laravel frameworks, as well as Node.js and back-end/security principles.  
+• Expertise in Docker technologies.  
+• Knowledge of object-oriented programming (OOP) concepts and software development methodologies.  
+• Deep expertise in SQL with hands-on experience in various database systems including MySQL, MSSQL, Oracle, and PostgreSQL. Proficient in formulating complex SQL queries and optimizing database performance.  
+• Intermediate familiarity with Linux commands.  
+• Experienced in developing API systems; comfortable with HTTP request types/responses and familiar with both JSON and XML formats.  
+• Strong knowledge of HTML5, CSS3, Javascript, and front-end principles.  
+• Proficient with Git version control systems and platforms like Github and Gitlab.
+• Currently actively involved in our institution's transition process from our Oracle ERP system to SAP. Beginning to gain basic knowledge and experience in SAP (specifically the SD and QM modules) and ABAP.
 
-### About
+In this era of rapid technological advancements, I remain committed to continuous learning to keep myself updated. My ability to quickly learn and adapt to new information enhances both my personal and professional growth. I always find excitement in discovering new things on my learning journey and maintain this passion by keeping pace with the latest trends and technological innovations in the industry.
 
-It's just one more [jekyll](https://github.com/jekyll/jekyll) theme. Maybe it's has some appearance like a linux console. :)
+## Experience
 
-[Bootstrap](http://getbootstrap.com/) was added to turn responsible. Thanks, [@magnunleno](https://github.com/magnunleno).
+**Sr. Web Software Developer**
 
-### Features
+~ Erkunt Tractor Ind. Inc.
+~ 06/2012 - Present
 
-- [x] Google analytics
-- [x] Disqus
-- [x] Responsible
-- [x] Highlights for code
+- To complete the software and application developments determined by the organization in line with the vision and strategies and to ensure that they are put into use.
 
-### Characteristics
+- Digitizing and updating processes such as quality, R&D, logistics, purchasing and sales that the company needs during all dealers, authorized service, suppliers, logistics network and production phase with PHP, C#.net, Oracle DB, MySQL, NoSQL, Rest Services.
 
-- [x] Customized (and nice :P) 404 page
-- [x] Simple
-- [x] Friendly to read
+- Ensured uninterrupted and error-free operation of software, applications, and connected databases both in-house and globally.
 
-### Screenshots
+- To analyze the effectiveness and efficiency of the developed software and the machines running on it and to make improvement studies.
 
-![Screenshot]({{ site.baseurl }}images/screenshot/01.png)
+- Developing and designing new projects by following technological developments and conducting research in order to increase the efficiency of the current system.
 
-![Screenshot]({{ site.baseurl }}images/screenshot/02.png)
+- Supervising and managing installation, maintenance, technical support work.
 
-### Config file example
 
-~~~ yml
-# Site settings
-title: "gjuniioor"
-bye_message: "Thx!"
-baseurl: "/clyell/"
-url: "https://gjuniioor.github.io"
-disqus: gjuniioor
 
-# Header settings
-nick: "gjuniioor"
-mail:
-    domain: "protonmail"
-    ext: "ch"
-source_code:
-    server: "github.com"
-    nick: "gjuniioor"
-blog:
-    server: "wordpress.com"
-    nick: "gjuniioor"
-fingerprint_key: "5E12 9ABC C2A9 564B C048  2DF9 D327 0D10 BC71 CF75"
+and
 
-# Build settings
-markdown: kramdown
-permalink: /:categories/:title/
-~~~
+- I played an active role in our institution's transition from our Oracle ERP system to SAP. During this process, I gained foundational knowledge in SAP, particularly focusing on the SD (Sales and Distribution) and QM (Quality Management) modules. Additionally, I had the opportunity to familiarize myself with the ABAP programming language on a preliminary level. I actively participated in intra-team coordination and communication to ensure the success of the transition.
+
+
+## Education
+
+2018-2021  
+~ Bachelor’s degree, Management Information Systems, Anadolu University
+<br>
+
+2009-2011  
+~ Associate’s degree  in  Computer Programming,  Sakarya University
+
+
+## Certificates
+
+2009-2011  
+~ Digital Game Development Certificate Program (only modeling and design)
+<br>
+~ TED University
+<br>
+~ *I have completed the trainings on Game Design, Modeling and Graphic Design, Animation and Sound, Character Animation, Graduation Project, (3DsMax, Unity, Photoshop) with high success.*
+<br>
+
+2013-2014  
+~ Microsoft Certified Solution Developer
+<br>
+~ Bilge Adam Technology
+<br>
+~ *During the training, I received Basic C# Topics, Advanced C# Topics, SQL Server Programming, Desktop Application Development with WPF, ASP.NET and MVC Framework Database Access, Entity Framework, Web Services and WCF Introduction training.*
+<br>
+
+2006-2007  
+~ Information Technologies Certificate Program
+<br>
+~ Middle East Technical University
+<br>
+~ *I took Computer Systems and Structures, Introduction to Computer Programming with C, Data Structures and Algorithms with C, Operating Systems with Unix, Software Engineering, Database Management Systems, Software Development Project, Web Programming.*
+
