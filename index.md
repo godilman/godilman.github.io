@@ -3,7 +3,7 @@ layout: content
 ---
 <br>
 
-# Hello, this is Gokhan Dilman
+# Hello 👋 this is Gokhan Dilman
 <br>
 
 ## About
