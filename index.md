@@ -6,7 +6,7 @@ layout: content
 # Hello 👋 this is Gokhan Dilman
 <br>
 
-## About
+# About
 • Strong knowledge in PHP, especially with the Codeigniter and Laravel frameworks, as well as Node.js and back-end/security principles.  
 • Expertise in Docker technologies.  
 • Knowledge of object-oriented programming (OOP) concepts and software development methodologies.  
@@ -19,7 +19,7 @@ layout: content
 
 In this era of rapid technological advancements, I remain committed to continuous learning to keep myself updated. My ability to quickly learn and adapt to new information enhances both my personal and professional growth. I always find excitement in discovering new things on my learning journey and maintain this passion by keeping pace with the latest trends and technological innovations in the industry.
 
-## Experience
+# Experience
 
 **Sr. Web Software Developer**
 
@@ -45,7 +45,7 @@ and
 - I played an active role in our institution's transition from our Oracle ERP system to SAP. During this process, I gained foundational knowledge in SAP, particularly focusing on the SD (Sales and Distribution) and QM (Quality Management) modules. Additionally, I had the opportunity to familiarize myself with the ABAP programming language on a preliminary level. I actively participated in intra-team coordination and communication to ensure the success of the transition.
 
 
-## Education
+# Education
 
 2018-2021  
 ~ Bachelor’s degree, Management Information Systems, Anadolu University
@@ -55,7 +55,7 @@ and
 ~ Associate’s degree  in  Computer Programming,  Sakarya University
 
 
-## Certificates
+#  Certificates
 
 2009-2011  
 ~ Digital Game Development Certificate Program (only modeling and design)
