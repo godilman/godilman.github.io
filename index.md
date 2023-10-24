@@ -49,7 +49,7 @@ and
 # Education
 
 2018-2021  
-~ Bachelor’s degree, Management Information Systems, Anadolu University
+~ Bachelor’s degree, Management Information Systems, Anadolu University <a href="images/main/IMG_20220316_123357.jpg" target="_blank">📃</a>
 <br>
 
 2009-2011  
