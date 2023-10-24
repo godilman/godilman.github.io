@@ -25,7 +25,7 @@ In this era of rapid technological advancements, I remain committed to continuou
 **Sr. Web Software Developer**
 
 ~ Erkunt Tractor Ind. Inc. <a href="images/main/IMG_20220316_124059.jpg" target="_blank">📃</a> <a href="images/main/kaizen.jpg" target="_blank">📃</a>
-<br<z
+<br>
 ~ 06/2012 - Present
 
 - To complete the software and application developments determined by the organization in line with the vision and strategies and to ensure that they are put into use.
