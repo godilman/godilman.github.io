@@ -15,7 +15,7 @@ I will try to update it day by day. Below, you can access summary information ab
 • Intermediate familiarity with Linux commands.  
 • Experienced in developing API systems; comfortable with HTTP request types/responses and familiar with both JSON and XML formats.  
 • Strong knowledge of HTML5, CSS3, Javascript, and front-end principles.  
-• Proficient with Git version control systems and platforms like Github and Gitlab.
+• Proficient with Git version control systems and platforms like Github and Gitlab.<br>
 • Currently actively involved in our institution's transition process from our Oracle ERP system to SAP. Beginning to gain basic knowledge and experience in SAP (specifically the SD and QM modules) and ABAP.
 
 In this era of rapid technological advancements, I remain committed to continuous learning to keep myself updated. My ability to quickly learn and adapt to new information enhances both my personal and professional growth. I always find excitement in discovering new things on my learning journey and maintain this passion by keeping pace with the latest trends and technological innovations in the industry.
