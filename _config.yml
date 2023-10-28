@@ -62,7 +62,7 @@ plugins:
 
 # Site settings
 title: "gokhan.dev"
-bye_message: "Thx! | Crafted with ❤️ by Gokhan Dilman"
+bye_message: "Thx! ❤️"
 baseurl: "/"
 url: "https://gokhan.dev"
 disqus: godilman
