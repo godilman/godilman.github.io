@@ -4,8 +4,6 @@ layout: content
 <br>
 
 # Hello 👋 this is Gokhan Dilman
-On October 24, 2023, I published this site on GitHub, developed with Jekyll. 
-I will try to update it day by day. Below, you can access summary information about me.
 
 # About
 • Strong knowledge in PHP, especially with the Codeigniter and Laravel frameworks, as well as Node.js and back-end/security principles.  
