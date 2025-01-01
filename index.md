@@ -3,80 +3,62 @@ layout: content
 ---
 <br>
 
-# Hello 👋 this is Gokhan Dilman
+# Hello 👋 I’m Gokhan Dilman
 
-# About
-• Strong knowledge in PHP, especially with the Codeigniter and Laravel frameworks, as well as Node.js and back-end/security principles.  
-• Expertise in Docker technologies.  
-• Knowledge of object-oriented programming (OOP) concepts and software development methodologies.  
-• Deep expertise in SQL with hands-on experience in various database systems including MySQL, MSSQL, Oracle, and PostgreSQL. Proficient in formulating complex SQL queries and optimizing database performance.  
-• Intermediate familiarity with Linux commands.  
-• Experienced in developing API systems; comfortable with HTTP request types/responses and familiar with both JSON and XML formats.  
-• Strong knowledge of HTML5, CSS3, Javascript, and front-end principles.  
-• Proficient with Git version control systems and platforms like Github and Gitlab.<br>
-• Currently actively involved in our institution's transition process from our Oracle ERP system to SAP. Beginning to gain basic knowledge and experience in SAP (specifically the SD and QM modules) and ABAP.
 
-In this era of rapid technological advancements, I remain committed to continuous learning to keep myself updated. My ability to quickly learn and adapt to new information enhances both my personal and professional growth. I always find excitement in discovering new things on my learning journey and maintain this passion by keeping pace with the latest trends and technological innovations in the industry.
+# About Me
+
+Hello! I’m a 38-year-old software developer living in Ankara. Working in technology and software is not just a job for me—it’s a passion that drives my ongoing quest for learning and innovation 💻. In my free time, I love being in nature and going camping ⛺, which helps me recharge and feeds my excitement for exploring new places. Capturing moments with my camera 📸 is my favorite way to immortalize these adventures. I also make an effort to read plenty of books 📚, constantly broadening my knowledge both professionally and personally. Keeping my sense of curiosity alive in every aspect of life has always been a source of inspiration for me.
+
+##### Technical Skills
+- Strong expertise in PHP (CI3+, Laravel8+, Lumen), Python, JS, Node.js, and backend/security principles.  
+- Proficient in Docker technologies.  
+- Solid foundation in object-oriented programming (OOP) and software development methodologies.  
+- Skilled in designing complex SQL queries and optimizing database performance (MySQL, MSSQL, Oracle, PostgreSQL, NoSQL).  
+- Intermediate knowledge of Linux command line.  
+- Experienced in **RESTful API development and integration**; well-versed in handling HTTP request/response types and working with JSON/XML formats.  
+- Strong knowledge of frontend technologies like HTML5, CSS3, and JavaScript.  
+- Experienced with Git version control systems (GitHub, GitLab).
+
+In this rapidly evolving technological era, I consistently strive to learn and adapt, fueling both my personal and professional development. I am passionate about discovering new technologies and closely following industry trends.
+
+---
 
 # Experience
 
-**Sr. Web Software Developer**
+#### Senior Web Software Developer
+**Erkunt Traktör Sanayii A.Ş. (a Mahindra Group company)**  <a href="images/main/IMG_20220316_124059.jpg" target="_blank">📃</a> 
+_06/2012 - Present_
 
-~ Erkunt Tractor Ind. Inc. <a href="images/main/IMG_20220316_124059.jpg" target="_blank">📃</a> <a href="images/main/kaizen.jpg" target="_blank">📃</a>
-<br>
-~ 06/2012 - Present
+- Develop and roll out software solutions aligned with the company’s vision and strategies.  
+- Digitize and update quality, R&D, logistics, purchasing, and sales processes needed throughout the production lifecycle using PHP, Python, C#.NET, Oracle DB, MySQL, NoSQL, and REST services.  
+- Ensure seamless and error-free operation of software, applications, and related databases.  
+- Perform improvements and efficiency enhancements for existing software.  
+- Research emerging technologies to design new projects that optimize current systems.  
+- Oversee installation, maintenance, and technical support.
 
-- To complete the software and application developments determined by the organization in line with the vision and strategies and to ensure that they are put into use.
+##### Key Projects
+- **Sales Process Digitalization**: Transformed previously paper- and Excel-based orders, sales, planning, and shipping processes into an integrated web solution, enabling full digital transformation.  
+- **QGate Project**: Developed a web-based quality management system for the Quality Department to track defects, detect production shortfalls, and calculate first-pass accuracy rates.  
+- **Supplier Portal**: Enabled suppliers to track orders and generate QR codes for shipments, allowing the warehouse to process all incoming materials with a single scan—significantly boosting employee performance.  
+- **E-Commerce Enhancements**: Implemented partial yet impactful improvements to an existing e-commerce platform.  
+- **Monitoring Software**: Built an internal monitoring tool to oversee both the applications I developed and the servers they run on.  
+- **Other In-House Solutions**: Created numerous custom applications to address various corporate needs. <a href="images/main/kaizen.jpg" target="_blank">📃</a>
 
-- Digitizing and updating processes such as quality, R&D, logistics, purchasing and sales that the company needs during all dealers, authorized service, suppliers, logistics network and production phase with PHP, C#.net, Oracle DB, MySQL, NoSQL, Rest Services.
-
-- Ensured uninterrupted and error-free operation of software, applications, and connected databases both in-house and globally.
-
-- To analyze the effectiveness and efficiency of the developed software and the machines running on it and to make improvement studies.
-
-- Developing and designing new projects by following technological developments and conducting research in order to increase the efficiency of the current system.
-
-- Supervising and managing installation, maintenance, technical support work.
-
-
-
-and
-
-- I played an active role in our institution's transition from our Oracle ERP system to SAP. During this process, I gained foundational knowledge in SAP, particularly focusing on the SD (Sales and Distribution) and QM (Quality Management) modules. Additionally, I had the opportunity to familiarize myself with the ABAP programming language on a preliminary level. I actively participated in intra-team coordination and communication to ensure the success of the transition.
-
+---
 
 # Education
+- **Bachelor’s Degree**, Management Information Systems, Anadolu University (2018-2021)  <a href="images/main/IMG_20220316_123357.jpg" target="_blank">📃</a>
+- **Associate’s Degree**, Computer Programming, Sakarya University (2009-2011) <a href="images/main/IMG_20220316_123547.jpg" target="_blank">📃</a> <a href="images/main/IMG_20220316_123634.jpg" target="_blank">📃</a>
 
-2018-2021  
-~ Bachelor’s degree, Management Information Systems, Anadolu University <a href="images/main/IMG_20220316_123357.jpg" target="_blank">📃</a>
-<br>
+---
 
-2009-2011  
-~ Associate’s degree  in  Computer Programming,  Sakarya University <a href="images/main/IMG_20220316_123547.jpg" target="_blank">📃</a> <a href="images/main/IMG_20220316_123634.jpg" target="_blank">📃</a>
+# Certificates
+- **Digital Game Development Certificate Program** *(only modeling and design)* (TED University, 2009-2011)  <a href="images/main/IMG_20220316_123750.jpg" target="_blank">📃</a>
+  - Focused on Game Design, 3D Modeling, Graphic Design, Animation, and Character Animation (3DsMax, Unity, Photoshop).  
+- **Microsoft Certified Solution Developer** (Bilge Adam Technology, 2013-2014)  <a href="images/main/IMG_20220316_123834.jpg" target="_blank">📃</a>
+  - Covered Fundamental and Advanced C#, SQL Server, WPF, ASP.NET, MVC, Entity Framework, Web Services, and WCF.  
+- **Information Technologies Certificate Program** (METU, 2006-2007)  
+  - Included Computer Systems/Structures, C Programming, Data Structures, Unix, Software Engineering, Database Management, Software Development Project, and Web Programming.
 
-
-#  Certificates
-
-2009-2011  
-~ Digital Game Development Certificate Program (only modeling and design) <a href="images/main/IMG_20220316_123750.jpg" target="_blank">📃</a>
-<br>
-~ TED University
-<br>
-~ *I have completed the trainings on Game Design, Modeling and Graphic Design, Animation and Sound, Character Animation, Graduation Project, (3DsMax, Unity, Photoshop) with high success.*
-<br>
-
-2013-2014  
-~ Microsoft Certified Solution Developer <a href="images/main/IMG_20220316_123834.jpg" target="_blank">📃</a>
-<br>
-~ Bilge Adam Technology
-<br>
-~ *During the training, I received Basic C# Topics, Advanced C# Topics, SQL Server Programming, Desktop Application Development with WPF, ASP.NET and MVC Framework Database Access, Entity Framework, Web Services and WCF Introduction training.*
-<br>
-
-2006-2007  
-~ Information Technologies Certificate Program
-<br>
-~ Middle East Technical University
-<br>
-~ *I took Computer Systems and Structures, Introduction to Computer Programming with C, Data Structures and Algorithms with C, Operating Systems with Unix, Software Engineering, Database Management Systems, Software Development Project, Web Programming.*
 
