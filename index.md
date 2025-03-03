@@ -28,7 +28,7 @@ In this rapidly evolving technological era, I consistently strive to learn and a
 
 #### Senior Web Software Developer
 
-_06/2012 - Present_
+**Erkunt Traktör Sanayii A.Ş. (a Mahindra Group company)** _06/2012 - Present_
 
 - Develop and roll out software solutions aligned with the company’s vision and strategies.  
 - Digitize and update quality, R&D, logistics, purchasing, and sales processes needed throughout the production lifecycle using PHP, Python, C#.NET, Oracle DB, MySQL, NoSQL, and REST services.  
