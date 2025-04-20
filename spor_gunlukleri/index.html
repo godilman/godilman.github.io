@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12 Haftalık Spor Programı</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    .program-container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .week-title {
+      font-size: 24px;
+      margin-top: 20px;
+      color: #333;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .day {
+      margin-top: 10px;
+    }
+    .exercise {
+      margin-left: 20px;
+      padding: 10px;
+      border-left: 4px solid #007BFF;
+      margin-bottom: 10px;
+      background: #f9f9f9;
+    }
+    video, img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+
+    .exercise-media {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .exercise-media video,
+    .exercise-media img {
+      flex: 1 1 calc(50% - 10px); /* yan yana 2'li */
+      max-width: calc(50% - 10px);
+      border-radius: 8px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>12 Haftalık Spor Programı</h1>
+    <p>Salı, Perşembe ve Cumartesi Günleri</p>
+  </header>
+
+  <div class="program-container" id="program"></div>
+
+  <script>
+    const program = [
+      {
+        week: '1. ve 2',
+        days: [
+          {
+            day: 'Cumartesi, Salı, Perşembe',
+            exercises: [
+              {
+                name: 'Chest Press Machine', // hareketin adı
+                sets: 3, // kaç set
+                reps: '12-15', // kaç tekrar
+                purpose: 'Göğüs kaslarını izole etmek ve gelişimini hedeflemek isteyenler için idealdir.', // hareketin amacı
+                benefits: 'Göğüs kaslarını güçlendirir, üst vücut kas kütlesini artırır. Serbest ağırlıklara göre daha kontrollü ve güvenlidir.', // hareketin faydaları
+                muscles: 'Göğüs (pectoralis major), ön omuz (anterior deltoid), triceps.', // hangi kasları çalıştırdığı
+                video: [
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-Machine-machine-chest-press-side.mp4#t=0.1',
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-Machine-machine-chest-press-front.mp4#t=0.1'
+                ]
+              },
+              {
+                name: 'Machine Pulldown', // hareketin adı
+                sets: 3, // kaç set
+                reps: '12-15', // kaç tekrar
+                purpose: 'Geniş ve güçlü bir sırt inşa etmek, barfiks için ön hazırlık yapmak isteyenler için idealdir.', // hareketin amacı
+                benefits: 'Sırt genişliğini artırır, kanat kaslarını belirginleştirir. Duruşu düzeltmeye yardımcı olur.', // hareketin faydaları
+                muscles: 'Sırt (özellikle latissimus dorsi), arka omuz, biceps.', // hangi kasları çalıştırdığı
+                video: [
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-machine-pulldown-front.mp4#t=0.1',
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-machine-pulldown-side.mp4#t=0.1'
+              ]
+              },
+              {
+                name: 'Machine Seated Cable Row',
+                sets: 3,
+                reps: 12-15,
+                purpose: 'Hem estetik bir sırt görünümü hem de duruş bozukluklarını düzeltmek isteyenler için uygundur.',
+                benefits: 'Sırt kalınlığını artırır, postürü düzeltir. Dengeli sırt gelişimi sağlar.',
+                muscles: 'Orta sırt (rhomboid, trapez), latissimus dorsi, arka omuz, biceps.',
+                video: ['https://media.musclewiki.com/media/uploads/videos/branded/male-machine-seated-cable-row-front.mp4#t=0.1',
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-machine-seated-cable-row-side.mp4#t=0.1'
+                ]
+              },
+              {
+                name: 'Cable Triceps Pushdown',
+                sets: 3,
+                reps: 12-15,
+                purpose: 'Kol arkasını izole ederek çalıştırmak isteyenler için harika bir izolasyon egzersizi. 💪',
+                benefits: 'Kol arkasındaki kasları sıkılaştırır, tanımlı ve güçlü triceps gelişimi sağlar.',
+                muscles: 'Triceps brachii (özellikle lateral ve long head).',
+                video: ['https://media.musclewiki.com/media/uploads/videos/branded/male-cable-push-downs-front.mp4#t=0.1',
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-cable-push-downs-side.mp4#t=0.1'
+                ]
+              },
+              {
+                name: 'Dumbbell Lateral Raise',
+                sets: 3,
+                reps: 12-15,
+                purpose: 'Estetik ve güçlü omuzlar isteyenler için temel izolasyon egzersizi. Kontrollü form şart! 🏋️‍♂️',
+                benefits: 'Omuz genişliğini artırır, V şekilli görünüm oluşturur.',
+                muscles: 'Orta omuz (lateral deltoid).',
+                video: ['https://media.musclewiki.com/media/uploads/videos/branded/male-Dumbbells-dumbbell-lateral-raise-front.mp4#t=0.1',
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-Dumbbells-dumbbell-lateral-raise-side.mp4#t=0.1'
+                ]
+              },
+              {
+                name: 'Plate Bicep Curl',
+                sets: 3,
+                reps: 12-15,
+                purpose: 'Alternatif bir biceps egzersizi olarak farklı uyaran arayanlar için etkili ve pratik bir seçenektir. 💥',
+                benefits: 'Kol kaslarını güçlendirir ve hacim kazandırır. Plate tutuşu sayesinde ön kol aktivasyonu artar.',
+                muscles: 'Biceps brachii (özellikle short head), ön kol kasları (brachialis, brachioradialis).',
+                video: ['https://media.musclewiki.com/media/uploads/videos/branded/male-plate-bicep-curl-front.mp4#t=0.1',
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-plate-bicep-curl-side.mp4#t=0.1'
+                ]
+              },
+              {
+                name: 'Machine Seated Cable Row',
+                sets: 3,
+                reps: 12-15,
+                purpose: 'Özellikle kambur duruşu düzeltmek ve sırt kaslarını hacimlendirmek için çok etkilidir.',
+                benefits: 'Sırt kalınlığını artırır, dengeli postür sağlar.',
+                muscles: 'Orta sırt (rhomboid, trapez), latissimus dorsi, arka omuz, biceps.',
+                video: ['https://media.musclewiki.com/media/uploads/videos/branded/male-machine-seated-cable-row-front.mp4#t=0.1',
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-machine-seated-cable-row-side.mp4#t=0.1'
+                ]
+              },
+              {
+                name: 'Forward Lunges',
+                sets: 3,
+                reps: 12-15,
+                purpose: 'Alternatif bir biceps egzersizi olarak farklı uyaran arayanlar için etkili ve pratik bir seçenektir. 💥',
+                benefits: 'Bacak gücünü ve dengesini artırır, kalçayı sıkılaştırır.',
+                muscles: 'Fonksiyonel güç, denge ve simetrik bacak gelişimi için ideal. Özellikle tek taraflı kas dengesizliklerini düzeltmede çok etkilidir.',
+                video: ['https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-forward-lunges-front.mp4#t=0.1',
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-forward-lunges-side.mp4#t=0.1'
+                ]
+              },
+              {
+                name: 'Sit-ups',
+                sets: 3,
+                reps: 12-15,
+                purpose: 'Six-pack görünümü hedefleyenler için temel karın egzersizidir. Ancak bele yük bindirebilir, doğru form kritik! ⚠️🔥',
+                benefits: 'Karın kaslarını güçlendirir, core stabilitesini artırır.',
+                muscles: 'Rectus abdominis (karın önü), iliopsoas (kalça fleksörleri).',
+                video: ['https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-forward-lunges-front.mp4#t=0.1',
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-forward-lunges-side.mp4#t=0.1'
+                ]
+              },
+              {
+                name: 'Laying Leg Raises',
+                sets: 3,
+                reps: 12-15,
+                purpose: 'Göbek altı yağlanması olan bölgeleri şekillendirmek isteyenler için birebirdir. Sırtın zemine yapışık kalması çok önemli! 🔥💪',
+                benefits: 'Alt karın bölgesini hedef alır, karın sıkılaştırma ve core gücünü artırma açısından çok etkilidir.',
+                muscles: 'Alt karın (rectus abdominis alt kısmı), kalça fleksörleri (iliopsoas).',
+                video: ['https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-laying-leg-raises-front.mp4#t=0.1',
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-laying-leg-raises-side.mp4#t=0.1'
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      // ... diğer 11 hafta benzer yapıda eklenebilir
+    ];
+
+    const container = document.getElementById('program');
+
+    program.forEach(week => {
+      const weekEl = document.createElement('div');
+      weekEl.innerHTML = `<div class="week-title">${week.week}. Hafta</div>`;
+
+      week.days.forEach(day => {
+        const dayEl = document.createElement('div');
+        dayEl.className = 'day';
+        dayEl.innerHTML = `<h3>${day.day}</h3>`;
+
+        day.exercises.forEach(ex => {
+          const exEl = document.createElement('div');
+          exEl.className = 'exercise';
+
+          // Görselleri işle
+          let visualsHTML = '';
+          if (Array.isArray(ex.video)) {
+            visualsHTML = `<div class="exercise-media">` + ex.video.map(v =>
+              v.endsWith('.gif')
+                ? `<img src="${v}" alt="${ex.name}">`
+                : `<video controls src="${v}"></video>`
+            ).join('') + `</div>`;
+          } else {
+            visualsHTML = `<div class="exercise-media">` +
+              (ex.video.endsWith('.gif')
+                ? `<img src="${ex.video}" alt="${ex.name}">`
+                : `<video controls src="${ex.video}"></video>`) +
+              `</div>`;
+          }
+
+          // Diğer içerikleri ekle
+          exEl.innerHTML = `
+            <strong>${ex.name}</strong><br>
+            Set: ${ex.sets} | Tekrar: ${ex.reps}<br>
+            Amaç: ${ex.purpose}<br>
+            Faydaları: ${ex.benefits}<br>
+            ${visualsHTML}
+          `;
+
+          dayEl.appendChild(exEl);
+        });
+
+        weekEl.appendChild(dayEl);
+      });
+
+      container.appendChild(weekEl);
+    });
+  </script>
+</body>
+</html>
