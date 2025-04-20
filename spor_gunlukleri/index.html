@@ -150,14 +150,14 @@
                 ]
               },
               {
-                name: 'Machine Seated Cable Row',
+                name: 'Machine Seated Plate Loaded Preacher Curl',
                 sets: 3,
                 reps: 12-15,
-                purpose: 'Özellikle kambur duruşu düzeltmek ve sırt kaslarını hacimlendirmek için çok etkilidir.',
-                benefits: 'Sırt kalınlığını artırır, dengeli postür sağlar.',
-                muscles: 'Orta sırt (rhomboid, trapez), latissimus dorsi, arka omuz, biceps.',
-                video: ['https://media.musclewiki.com/media/uploads/videos/branded/male-machine-seated-cable-row-front.mp4#t=0.1',
-                  'https://media.musclewiki.com/media/uploads/videos/branded/male-machine-seated-cable-row-side.mp4#t=0.1'
+                purpose: 'Net, hacimli ve şekilli biceps isteyenler için mükemmel bir izolasyon hareketidir. Kolun alt kısmına daha fazla vurgu yapar. 💥💪',
+                benefits: 'Biceps’i izole şekilde çalıştırır, momentum kullanımını engelleyerek kasın tam yük altında kalmasını sağlar.',
+                muscles: 'Biceps brachii (özellikle short head), brachialis.',
+                video: ['https://media.musclewiki.com/media/uploads/videos/branded/male-Machine-machine-seated-plate-loaded-preacher-curl-side.mp4#t=0.1',
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-Machine-machine-seated-plate-loaded-preacher-curl-front.mp4#t=0.1'
                 ]
               },
               {
@@ -178,8 +178,8 @@
                 purpose: 'Six-pack görünümü hedefleyenler için temel karın egzersizidir. Ancak bele yük bindirebilir, doğru form kritik! ⚠️🔥',
                 benefits: 'Karın kaslarını güçlendirir, core stabilitesini artırır.',
                 muscles: 'Rectus abdominis (karın önü), iliopsoas (kalça fleksörleri).',
-                video: ['https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-forward-lunges-front.mp4#t=0.1',
-                  'https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-forward-lunges-side.mp4#t=0.1'
+                video: ['https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-situp-side.mp4#t=0.1',
+                  'https://media.musclewiki.com/media/uploads/videos/branded/male-Bodyweight-situp-front.mp4#t=0.1'
                 ]
               },
               {
@@ -234,9 +234,10 @@
           // Diğer içerikleri ekle
           exEl.innerHTML = `
             <strong>${ex.name}</strong><br>
-            Set: ${ex.sets} | Tekrar: ${ex.reps}<br>
-            Amaç: ${ex.purpose}<br>
-            Faydaları: ${ex.benefits}<br>
+            <strong>Set: </strong>${ex.sets} | Tekrar: ${ex.reps}<br>
+            <strong>Amaç: </strong>${ex.purpose}<br>
+            <strong>Faydaları: </strong>${ex.benefits}<br>
+            <strong>Çalıştırdığı Kaslar: </strong>${ex.muscles}<br>
             ${visualsHTML}
           `;
 
