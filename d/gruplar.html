@@ -24,14 +24,14 @@
       // Dummy isimleri yükle
       window.addEventListener("DOMContentLoaded", () => {
       const dummyNames = [
-        "Defne Eryücel", "Gökhan Dilman", "Ali Demir", "Ayşe Yıldız", "Mehmet Kaya", "Elif Aksoy", "Ahmet Şahin",
+        "Gökhan Dilman", "Ali Demir", "Ayşe Yıldız", "Mehmet Kaya", "Elif Aksoy", "Ahmet Şahin",
         "Zeynep Yılmaz", "Mert Can", "Fatma Öztürk", "Burak Aydın", "Cansu Karaca",
         "Emre Koç", "Buse Uçar", "Onur Güneş", "Derya Aksu", "Serkan Efe",
         "Seda Ergin", "Kadir Arslan", "Melis Kurt", "Tolga Yüce", "Gamze Polat",
         "İsmail Ateş", "Ece Gül", "Hakan Duru", "Nazlı Ersoy", "Volkan Yıldırım",
         "Pelin Sönmez", "Tuna Sezer", "Esra Demirtaş", "Furkan Kılıç", "Nilay Demir",
         "Kerem Karaca", "Özge Taş", "Barış Aydın", "Yasemin Tetik", "Okan Turan",
-        "Tuğba Duran", "Halil İnce", "Dilan Yılmaz", "Selim Baran", "Sibel Ay",
+        "Tuğba Duran", "Halil İnce", "Dilan Yılmaz", "Defne Eryücel", "Selim Baran", "Sibel Ay",
         "Canan Toprak", "Metin Güler", "Hilal Aydın", "Ferhat Karaca", "Aylin Kurt",
         "İlker Sönmez", "Berk Arda", "Begüm Usta", "Cem Arslan", "Gizem Polat"
       ];
@@ -172,7 +172,7 @@ function renderGroups(groups) {
     const namesWithNumbers = group.map((p, index) => {
       const name = `${index + 1}- ${p.raw}`;
       if (p.norm === "defne eryücel" || p.norm === "gökhan dilman") {
-        return `<span style="color:red">${name}</span>`;
+        return `<span style="">${name}</span>`;
       }
       return name;
     }).join("\n");
