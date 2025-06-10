@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Grup Oluşturucu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { padding: 2rem; }
+    .group-card { margin-bottom: 1rem; }
+    .group-card pre { white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3 class="mb-3">Kişi Listesi</h3>
+    <textarea id="nameInput" class="form-control mb-3" rows="10"></textarea>
+    <label for="groupSizeSelect" class="form-label">Grup Kişi Sayısı</label>
+    <select id="groupSizeSelect" class="form-select mb-3"></select>
+    <button id="groupBtn" class="btn btn-primary mb-4">Grupla</button>
+    <div id="groupCards" class="row"></div>
+  </div>
+
+  <script>
+      // Dummy isimleri yükle
+      window.addEventListener("DOMContentLoaded", () => {
+      const dummyNames = [
+        "Defne Eryücel", "Gökhan Dilman", "Ali Demir", "Ayşe Yıldız", "Mehmet Kaya", "Elif Aksoy", "Ahmet Şahin",
+        "Zeynep Yılmaz", "Mert Can", "Fatma Öztürk", "Burak Aydın", "Cansu Karaca",
+        "Emre Koç", "Buse Uçar", "Onur Güneş", "Derya Aksu", "Serkan Efe",
+        "Seda Ergin", "Kadir Arslan", "Melis Kurt", "Tolga Yüce", "Gamze Polat",
+        "İsmail Ateş", "Ece Gül", "Hakan Duru", "Nazlı Ersoy", "Volkan Yıldırım",
+        "Pelin Sönmez", "Tuna Sezer", "Esra Demirtaş", "Furkan Kılıç", "Nilay Demir",
+        "Kerem Karaca", "Özge Taş", "Barış Aydın", "Yasemin Tetik", "Okan Turan",
+        "Tuğba Duran", "Halil İnce", "Dilan Yılmaz", "Selim Baran", "Sibel Ay",
+        "Canan Toprak", "Metin Güler", "Hilal Aydın", "Ferhat Karaca", "Aylin Kurt",
+        "İlker Sönmez", "Berk Arda", "Begüm Usta", "Cem Arslan", "Gizem Polat"
+      ];
+      document.getElementById("nameInput").value = dummyNames.join("\n");
+      updateGroupSizes();
+    });
+
+    function normalize(name) {
+      return name.trim().toLowerCase();
+    }
+
+    function getDivisors(n) {
+      let result = [];
+      for (let i = 2; i <= n / 2; i++) {
+        if (n % i === 0 && n / i >= 2) result.push(i);
+      }
+      return result;
+    }
+
+    function updateGroupSizes() {
+      const names = getNames();
+      const groupSizeSelect = document.getElementById("groupSizeSelect");
+      groupSizeSelect.innerHTML = "";
+      const divisors = getDivisors(names.length);
+      divisors.forEach(size => {
+        const opt = document.createElement("option");
+        opt.value = size;
+        opt.textContent = `${size} kişilik gruplar`;
+        groupSizeSelect.appendChild(opt);
+      });
+    }
+
+
+    function getNames() {
+      return document.getElementById("nameInput").value
+        .split("\n")
+        .map(line => line.trim())
+        .filter(Boolean);
+    }
+
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+    }
+    //
+    function groupNames() {
+  const rawNames = getNames();
+  let people = rawNames.map(n => ({ raw: n, norm: normalize(n) }));
+
+  const defne = people.find(p => p.norm === "defne eryücel");
+  const gokhan = people.find(p => p.norm === "gökhan dilman");
+
+  const kutays = people.filter(p =>
+    p.norm.startsWith("kutay ") ||
+    p.norm === "kutay" ||
+    p.norm.includes(" kutay")
+  );
+
+  if (!(defne && gokhan)) {
+    people = people.filter(p => p.norm !== "defne eryücel" && p.norm !== "gökhan dilman");
+  }
+
+  const groupSize = parseInt(document.getElementById("groupSizeSelect").value);
+  const totalGroups = Math.ceil(people.length / groupSize);
+  const groups = Array.from({ length: totalGroups }, () => []);
+
+  shuffle(people);
+
+  let defneGokhanGroupIndex = -1;
+
+  if (defne && gokhan) {
+    people = people.filter(p => p.norm !== defne.norm && p.norm !== gokhan.norm);
+
+    // Defne ve Gökhan'ı koymak için uygun grup bul
+    const candidateIndexes = groups
+      .map((_, i) => i)
+      .filter(i => groups[i].length <= groupSize - 2);
+
+    shuffle(candidateIndexes);
+
+    for (const index of candidateIndexes) {
+      const group = groups[index];
+      const hasKutay = group.some(p => kutays.find(kp => kp.norm === p.norm));
+      if (!hasKutay) {
+        group.push(defne, gokhan);
+        defneGokhanGroupIndex = index;
+        break;
+      }
+    }
+  }
+
+  // Kalan kişileri sırayla dağıt
+  let idx = 0;
+  people.forEach(p => {
+    if (kutays.find(k => k.norm === p.norm)) {
+      // Kutay ise Defne-Gökhan grubuna koyma
+      let placed = false;
+      for (let i = 0; i < groups.length; i++) {
+        if (i === defneGokhanGroupIndex) continue;
+        if (groups[i].length < groupSize) {
+          groups[i].push(p);
+          placed = true;
+          break;
+        }
+      }
+      if (!placed) {
+        // Zorla atama
+        for (let i = 0; i < groups.length; i++) {
+          if (i !== defneGokhanGroupIndex) {
+            groups[i].push(p);
+            break;
+          }
+        }
+      }
+    } else {
+      // Normal kişiler
+      while (groups[idx].length >= groupSize) idx = (idx + 1) % groups.length;
+      groups[idx].push(p);
+    }
+  });
+
+  groups.forEach(group => group.sort((a, b) => a.raw.localeCompare(b.raw)));
+  renderGroups(groups);
+}
+
+
+    
+function renderGroups(groups) {
+  const container = document.getElementById("groupCards");
+  container.innerHTML = "";
+  groups.forEach((group, i) => {
+    const col = document.createElement("div");
+    col.className = "col-md-4 group-card";
+
+    // İsimleri numaralı ve Defne-Gökhan kırmızı olarak hazırla
+    const namesWithNumbers = group.map((p, index) => {
+      const name = `${index + 1}- ${p.raw}`;
+      if (p.norm === "defne eryücel" || p.norm === "gökhan dilman") {
+        return `<span style="color:red">${name}</span>`;
+      }
+      return name;
+    }).join("\n");
+
+    col.innerHTML = `
+      <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <strong>Grup ${i + 1}</strong>
+          <button class="btn btn-sm btn-outline-secondary" onclick="copyGroup(${i})">Kopyala</button>
+        </div>
+        <div class="card-body">
+          <pre id="group-${i}">${namesWithNumbers}</pre>
+        </div>
+      </div>`;
+    container.appendChild(col);
+  });
+}
+
+    function copyGroup(i) {
+      const text = document.getElementById(`group-${i}`).innerText;
+      navigator.clipboard.writeText(text);
+    }
+
+    document.getElementById("groupBtn").addEventListener("click", groupNames);
+    document.getElementById("nameInput").addEventListener("input", updateGroupSizes);
+
+    updateGroupSizes();
+  </script>
+</body>
+</html>
