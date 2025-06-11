@@ -197,7 +197,7 @@ CAN UYAN`.split('\n');
     });
 
     function normalize(name) {
-      return name.trim().toLowerCase();
+      return name.trim().toLocaleLowerCase('tr').replace(/\s+/g, ' ');
     }
 
     function getDivisors(n) {
@@ -246,7 +246,8 @@ CAN UYAN`.split('\n');
   const kutays = people.filter(p =>
     p.norm.startsWith("kutay ") ||
     p.norm === "kutay" ||
-    p.norm.includes(" kutay")
+    p.norm.includes(" kutay") ||
+    p.norm.split(" ").includes("kutay")
   );
 
   if (!(defne && gokhan)) {
